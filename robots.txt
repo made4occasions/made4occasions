@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /privacy-policy.html
+Disallow: /terms-conditions.html
+Disallow: /hire-agreement.html
+Disallow: /cookie-policy.html
+
+Sitemap: https://www.madeforoccasions.co.uk/sitemap.xml
