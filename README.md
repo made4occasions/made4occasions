@@ -39,7 +39,7 @@ A `serve.ps1` PowerShell script is also included (no dependencies) — run it an
 
 **5. Wire up the enquiry form.** The "Check Your Date" form on `contact.html` currently shows a success message on submit but doesn't send anywhere — hook `assets/js/main.js` → `initForm()` up to a real form backend (email service, booking system API, etc.) when you're ready.
 
-**6. Update `sitemap.xml` / `robots.txt`** if the final domain differs from `madeforoccasions.co.uk`.
+**6. Update `sitemap.xml` / `robots.txt`** if the final domain differs from `made4occasions.co.uk`.
 
 ## Logo files
 
