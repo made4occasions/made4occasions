@@ -19,7 +19,7 @@ window.MFO_CONFIG = {
     instagramHandle: "@made4occasions_",
     facebook: "https://www.facebook.com/profile.php?id=61594058203903",
     tiktok: "https://www.tiktok.com/@made.4.occasions",
-    serviceRegion: "Blackpool & Lancashire",
+    serviceRegion: "Lancashire, Cheshire & Cumbria",
     baseTown: "Blackpool, Lancashire"
   },
 

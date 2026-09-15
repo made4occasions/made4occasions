@@ -1,6 +1,6 @@
 # Made for Occasions — website
 
-A complete, mobile-first website for Made for Occasions (light-up number hire, Blackpool & Lancashire). Plain HTML/CSS/JS — no build step, no framework, works on any standard web host.
+A complete, mobile-first website for Made for Occasions (light-up number hire, Lancashire, Cheshire & Cumbria). Plain HTML/CSS/JS — no build step, no framework, works on any standard web host.
 
 ## Viewing it locally
 
