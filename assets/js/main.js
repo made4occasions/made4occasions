@@ -31,6 +31,7 @@
     initLightbox();
     initForm();
     initCtaTracking();
+    initStickyCta();
     document.querySelectorAll("[data-year]").forEach(function (el) {
       el.textContent = new Date().getFullYear();
     });
@@ -286,6 +287,20 @@
         if (errorNote) errorNote.hidden = false;
       });
     });
+  }
+
+  /* ---------- Sticky CTA visibility ------------------------------------------------
+     On the homepage, the hero already has its own "Check Availability" button.
+     Hide the fixed sticky bar while that button is on screen so it doesn't sit on
+     top of the hero's own buttons on tall/narrow phones. */
+  function initStickyCta() {
+    var stickyCta = document.querySelector(".sticky-cta");
+    var heroActions = document.querySelector(".hero .hero-actions");
+    if (!stickyCta || !heroActions || !("IntersectionObserver" in window)) return;
+    var observer = new IntersectionObserver(function (entries) {
+      stickyCta.classList.toggle("is-hidden", entries[0].isIntersecting);
+    });
+    observer.observe(heroActions);
   }
 
   /* ---------- CTA click tracking -------------------------------------------------- */
