@@ -35,16 +35,9 @@ window.MFO_CONFIG = {
 
   // Areas served — shown on the Delivery section and Contact page.
   serviceAreas: [
-    "Blackpool",
-    "Lytham St Annes",
-    "Poulton-le-Fylde",
-    "Thornton-Cleveleys",
-    "Fleetwood",
-    "Kirkham",
-    "St Annes",
-    "Preston",
-    "Garstang",
-    "Surrounding Lancashire areas"
+    "Lancashire",
+    "Cheshire",
+    "Cumbria"
   ],
 
   // Pricing — shared by numbers and letters (same rental price either way).
@@ -131,7 +124,7 @@ window.MFO_CONFIG = {
     },
     {
       q: "How far do you deliver?",
-      a: "We're based in Blackpool and cover the Fylde coast and surrounding Lancashire areas as standard. Don't let distance put you off asking beyond that — just let us know your postcode and whether you'd like collection or delivery, and we'll confirm what's possible and any cost individually."
+      a: "We're based in Blackpool and cover Lancashire, Cheshire and Cumbria as standard. Don't let distance put you off asking beyond that — just let us know your postcode and whether you'd like collection or delivery, and we'll confirm what's possible and any cost individually."
     },
     {
       q: "Can you provide numbers for weddings?",
