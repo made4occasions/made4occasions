@@ -88,6 +88,21 @@ window.MFO_CONFIG = {
 
   lettersCustomNote: "Want different wording? Custom lettering — a name, a date spelled out, or anything specific to your celebration — is available as a bespoke option at an additional cost on top of standard hire.",
 
+  // Colour options — our bulbs are colour-changing rather than fixed
+  // warm-white, so numbers and letters can be set to any of these on the
+  // night. Shown as swatches on both product pages, and each links through
+  // to the enquiry form with that colour pre-filled.
+  colours: [
+    { name: "Warm White", hex: "#f3dfb0" },
+    { name: "Red", hex: "#e0433d" },
+    { name: "Pink", hex: "#f472b6" },
+    { name: "Blue", hex: "#4a90e2" },
+    { name: "Purple", hex: "#a463f2" },
+    { name: "Green", hex: "#4caf7d" },
+    { name: "Gold", hex: "#d6be8a" }
+  ],
+  coloursNote: "Every number and letter is colour-changing, not just warm-white — pick a single colour to match your theme, or keep it classic. Let us know your preference when you enquire and we'll confirm it's set up for your event.",
+
   // FAQs — reused on the FAQ page and the homepage FAQ preview.
   faqs: [
     {

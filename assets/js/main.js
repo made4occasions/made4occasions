@@ -126,6 +126,20 @@
       initReveal();
     });
     setAll("[data-cfg='letters-custom-note']", CFG.lettersCustomNote);
+    setAll("[data-cfg='colours-note']", CFG.coloursNote);
+
+    // Colour swatches — link through to the enquiry form with that colour pre-filled.
+    document.querySelectorAll("[data-cfg-list='colours']").forEach(function (wrap) {
+      wrap.innerHTML = (CFG.colours || []).map(function (c) {
+        return (
+          '<a class="colour-swatch reveal" href="contact.html?colour=' + encodeURIComponent(c.name) + '">' +
+            '<span class="colour-swatch-dot" style="background:' + c.hex + ';color:' + c.hex + ';"></span>' +
+            '<span class="colour-swatch-label">' + c.name + '</span>' +
+          '</a>'
+        );
+      }).join("");
+      initReveal();
+    });
 
     // Spec table placeholders
     document.querySelectorAll("[data-cfg='spec-height']").forEach(function (el) { el.textContent = CFG.productSpecs.height; });
@@ -257,6 +271,11 @@
     if (typeParam) {
       var typeField = form.querySelector("[name='eventType']");
       if (typeField) typeField.value = typeParam;
+    }
+    var colourParam = params.get("colour");
+    if (colourParam) {
+      var colourField = form.querySelector("[name='colour']");
+      if (colourField) colourField.value = colourParam;
     }
 
     form.addEventListener("submit", function (e) {
