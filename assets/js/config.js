@@ -54,8 +54,8 @@ window.MFO_CONFIG = {
     width: "Varies by number or word",
     power: "Fitted with bulbs and plugs into a standard mains socket — no special power setup needed.",
     hirePeriod: "Usually 1–2 days — exact timings are agreed with you based on your event.",
-    indoorOutdoor: "Suitable for both indoor and outdoor use.",
-    finish: "Warm-white illuminated bulbs, freestanding, professionally finished"
+    indoorOutdoor: "Indoor use and covered spaces such as marquees — not designed to be placed directly outside on the ground.",
+    finish: "Colour-changing illuminated bulbs (warm-white or a colour of your choice), freestanding, professionally finished"
   },
 
   // Popular number combinations featured on the homepage — easy to extend.
@@ -95,6 +95,10 @@ window.MFO_CONFIG = {
       a: "Our numbers and letters are large freestanding pieces designed to make a genuine impact in a room. They stand around 4ft tall, with width varying by number or word."
     },
     {
+      q: "Can the bulbs change colour?",
+      a: "Yes — our bulbs are colour-changing, not just warm-white. You can have your numbers or letters glowing warm-white for a classic look, or switched to a colour that matches your theme."
+    },
+    {
       q: "Do you deliver?",
       a: "We offer both collection and delivery. You're welcome to collect and return your hire yourself, or we can deliver, set up and collect it for you — whichever suits you, along with any delivery cost, is confirmed once you enquire."
     },
@@ -108,7 +112,7 @@ window.MFO_CONFIG = {
     },
     {
       q: "Can the numbers be used outside?",
-      a: "Yes — our numbers and letters can be used both indoors and outdoors, so they're just as suited to a marquee or garden as they are to an indoor venue."
+      a: "They're designed for indoor use and covered spaces such as marquees, so they work just as well at a marquee reception as they do indoors. We wouldn't recommend placing them directly outside on the ground, where they can pick up dirt and moisture — if you're planning something in the open air, get in touch and we'll talk through what's possible for your venue."
     },
     {
       q: "How do I book?",

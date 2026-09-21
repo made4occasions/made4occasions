@@ -93,11 +93,12 @@
     document.querySelectorAll("[data-cfg-list='inventory']").forEach(function (wrap) {
       wrap.innerHTML = (CFG.inventory || []).filter(function (d) { return d.active; }).map(function (d) {
         return (
-          '<div class="number-card reveal">' +
+          '<a class="number-card reveal" href="contact.html?numbers=' + encodeURIComponent(d.digit) + '">' +
             '<div class="digit">' + d.digit + '</div>' +
             '<h3>Number ' + d.digit + '</h3>' +
             '<p>' + (d.available ? "Available to hire on its own or combined." : "Currently unavailable — ask about alternatives.") + '</p>' +
-          '</div>'
+            '<span class="btn btn-secondary">' + (d.available ? "Enquire About This Number" : "Ask About Alternatives") + '</span>' +
+          '</a>'
         );
       }).join("");
       initReveal();
@@ -115,10 +116,11 @@
     document.querySelectorAll("[data-cfg-list='letters']").forEach(function (wrap) {
       wrap.innerHTML = (CFG.letters || []).filter(function (w) { return w.active; }).map(function (w) {
         return (
-          '<div class="number-card reveal">' +
+          '<a class="number-card reveal" href="contact.html?numbers=' + encodeURIComponent(w.word) + '">' +
             '<div class="word">' + w.word + '</div>' +
             '<p>' + (w.available ? "Available to enquire about now." : "Currently unavailable — ask about alternatives.") + '</p>' +
-          '</div>'
+            '<span class="btn btn-secondary">' + (w.available ? "Enquire About " + w.word : "Ask About Alternatives") + '</span>' +
+          '</a>'
         );
       }).join("");
       initReveal();
