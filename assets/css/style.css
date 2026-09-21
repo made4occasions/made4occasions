@@ -502,9 +502,7 @@ body.nav-open { overflow: hidden; }
   border: 1px solid var(--border-subtle);
   background: var(--bg-elevated);
   min-width: 92px;
-  transition: border-color var(--dur-fast) var(--ease-out);
 }
-.colour-swatch:hover { border-color: var(--border-strong); }
 .colour-swatch-dot {
   width: 34px;
   height: 34px;

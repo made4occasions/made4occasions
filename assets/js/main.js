@@ -132,10 +132,10 @@
     document.querySelectorAll("[data-cfg-list='colours']").forEach(function (wrap) {
       wrap.innerHTML = (CFG.colours || []).map(function (c) {
         return (
-          '<a class="colour-swatch reveal" href="contact.html?colour=' + encodeURIComponent(c.name) + '">' +
+          '<div class="colour-swatch reveal">' +
             '<span class="colour-swatch-dot" style="background:' + c.hex + ';color:' + c.hex + ';"></span>' +
             '<span class="colour-swatch-label">' + c.name + '</span>' +
-          '</a>'
+          '</div>'
         );
       }).join("");
       initReveal();
@@ -271,11 +271,6 @@
     if (typeParam) {
       var typeField = form.querySelector("[name='eventType']");
       if (typeField) typeField.value = typeParam;
-    }
-    var colourParam = params.get("colour");
-    if (colourParam) {
-      var colourField = form.querySelector("[name='colour']");
-      if (colourField) colourField.value = colourParam;
     }
 
     form.addEventListener("submit", function (e) {

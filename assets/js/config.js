@@ -89,9 +89,9 @@ window.MFO_CONFIG = {
   lettersCustomNote: "Want different wording? Custom lettering — a name, a date spelled out, or anything specific to your celebration — is available as a bespoke option at an additional cost on top of standard hire.",
 
   // Colour options — our bulbs are colour-changing rather than fixed
-  // warm-white, so numbers and letters can be set to any of these on the
-  // night. Shown as swatches on both product pages, and each links through
-  // to the enquiry form with that colour pre-filled.
+  // warm-white. Controlled by the customer via remote on the night, not
+  // something to request in advance — shown here as illustrative swatches,
+  // not a booking selection.
   colours: [
     { name: "Warm White", hex: "#f3dfb0" },
     { name: "Red", hex: "#e0433d" },
@@ -101,7 +101,7 @@ window.MFO_CONFIG = {
     { name: "Green", hex: "#4caf7d" },
     { name: "Gold", hex: "#d6be8a" }
   ],
-  coloursNote: "Every number and letter is colour-changing, not just warm-white — pick a single colour to match your theme, or keep it classic. Let us know your preference when you enquire and we'll confirm it's set up for your event.",
+  coloursNote: "Every number and letter is colour-changing, not just warm-white — and it comes with a remote, so you're in control on the night. Switch between warm-white and any colour whenever you like, no need to decide in advance.",
 
   // FAQs — reused on the FAQ page and the homepage FAQ preview.
   faqs: [
@@ -111,7 +111,7 @@ window.MFO_CONFIG = {
     },
     {
       q: "Can the bulbs change colour?",
-      a: "Yes — our bulbs are colour-changing, not just warm-white. You can have your numbers or letters glowing warm-white for a classic look, or switched to a colour that matches your theme."
+      a: "Yes — our bulbs are colour-changing, not just warm-white, and each hire comes with a remote. That means you're in control on the night and can switch between warm-white and any colour yourself, whenever you like — no need to decide in advance."
     },
     {
       q: "Do you deliver?",
